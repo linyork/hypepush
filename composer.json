@@ -9,7 +9,7 @@
             "email": "jason945119@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4"
     },
