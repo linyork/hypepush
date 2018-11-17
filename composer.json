@@ -9,6 +9,13 @@
             "email": "jason945119@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypepush\\": "src/"
+        }
+    }
 }
