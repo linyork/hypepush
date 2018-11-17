@@ -2,13 +2,13 @@
     "name": "york/hypepush",
     "description": "a simple tool of web push",
     "type": "composer-plugin",
+    "license": "MIT",
     "authors": [
         {
             "name": "york",
             "email": "jason945119@gmail.com"
         }
     ],
-    "require": {
-        "php": "^5.6.37"
-    }
+    "minimum-stability": "dev",
+    "require": {}
 }
