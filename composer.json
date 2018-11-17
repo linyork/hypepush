@@ -1,7 +1,7 @@
 {
     "name": "york/hypepush",
     "description": "a simple tool of web push",
-    "type": "composer-plugin",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
