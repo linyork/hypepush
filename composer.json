@@ -1,0 +1,12 @@
+{
+    "name": "york/hypepush",
+    "description": "a simple tool of web push",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "york",
+            "email": "jason945119@gmail.com"
+        }
+    ],
+    "require": {}
+}
