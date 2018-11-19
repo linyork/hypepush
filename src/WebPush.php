@@ -2,9 +2,10 @@
 /**
  * @author 2017/9 Heat, York
  */
-
-class WebPush
+namespace HeatYork;
+class HypePush
 {
+	static public $webPushObject;
 	// Construct parameters
 	private $typeList = array('fcm', 'safari');
 	private $type, $errorMsg;
@@ -15,11 +16,30 @@ class WebPush
 	// Package
 	private $token, $payloadData;
 
+	public static function getInstance( $type, $array )
+	{
+		// 未建立 RuntimeObject
+		if( !isset(static::$webPushObject) )
+		{
+			static::$webPushObject = new HypePush();
+		}
+
+		// Runtime中有該物件則執行
+		if( isset(static::$webPushObject) )
+		{
+			static::$webPushObject->init($type, $array);
+		}
+
+		// 返回該物件
+		return static::$webPushObject;
+
+	}
+
 	/**
 	 * @param string $type
 	 * @param array  $array
 	 */
-	function __construct( $type, $array )
+	protected function init( $type, $array )
 	{
 		# 判斷是否在list裡
 		if( in_array( $type, $this->typeList ) )
