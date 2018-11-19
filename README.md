@@ -10,7 +10,7 @@
         "passPhrase"=>{pem password},
         "expiryTime"=>{expiryTime},
         );
-    $push_safari = new WebPush( "safari", $push_safari_array );
+    $push_safari = \HeatYork\HypePush::getInstance( "safari", $push_safari_array );
 
     if( $push_safari->webPush( {devices token}, {your payload data} ) )
     {
@@ -26,7 +26,7 @@
         "fcmApiAccessKey"=>{your access key}, 
         "timeToLive"=>{21600},
         );
-    $push_fcm = new WebPush( "fcm", $push_fcm_array );
+    $push_fcm = \HeatYork\HypePush::getInstance( "fcm", $push_fcm_array );
 
     if( $push_fcm->webPush( {devices token}, {your payload data} ) )
     {
